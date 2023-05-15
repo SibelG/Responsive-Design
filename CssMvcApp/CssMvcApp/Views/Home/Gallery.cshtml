@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Galeri Page";
+}
+
+
+<html>
+    <head>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+        <style>
+            *{
+                box-sizing:border-box;
+            }
+            body{
+                margin:0;
+            }
+
+            .header{
+                text-align:center;
+                padding:40px;
+            }
+            .row{
+                display:flex;
+                flex-wrap:wrap;
+            }
+            .column{
+                flex:25%;
+                max-width:25%;
+                padding:0 5px;
+            }
+            .column img{
+                margin-top:10px;
+                width:100%;
+                vertical-align:middle;
+
+            }
+
+            @@media(max-width:800px){
+                .column{
+                    flex:50%;
+                    max-width:100%;
+                }
+            }
+
+        @@media(max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        
+        </style>
+        <body>
+        <div class="header">
+            <h1>with Flexbox Image Gallery</h1>
+            <p>Flexbox's Power'</p>
+        </div>
+            <div class="row">
+             <div class="column">
+                <img src="../images/img1.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\128-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\137-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\171-400x600.jpg" />
+            </div>
+
+            <div class="column">
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\173-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\348-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\353-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\38-400x600.jpg" />
+            
+            </div>
+            <div class="column">
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\508-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\541-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\545-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\551-400x600.jpg" />
+
+            </div>
+            <div class="column">
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\657-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\77-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\830-400x600.jpg" />
+                <img src="c:\users\sblgn\webdesign\cssmvcapp\cssmvcapp\images\882-400x600.jpg" />
+
+            </div>
+            </div>
+
+        </body>
+    </head>
+</html>

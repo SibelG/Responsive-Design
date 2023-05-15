@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 25px;
+            text-align: center;
+            background-color: #f1f1f1;
+
+        }
+        body{
+            background: #f1f1f1;
+            padding: 10px;
+            font-family: Arial;
+        }
+        .nav{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .nav a{
+           padding: 15px 17px;
+           float:left ;
+           text-decoration: none;
+           color: white;
+
+        }
+        .nav a:hover{
+            background-color: grey;
+        }
+        .sol{
+            float: left;
+            width: 75%;
+
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+        .sag{
+            float: right;
+            width: 25%;
+            padding-left: 20px;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+
+        }
+        .fakeimg{
+            background-color: #aaa;
+            padding: 20px;
+            width: 100%;
+
+        }
+        .footer{
+            background-color: #aaa;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+
+        }
+
+        @media screen and (max-width: 800px){
+                .sag,.sol{
+                    width: 100%;
+                }
+        }
+ 
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect</p>
+    </div>
+
+    <div class="nav">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="" style="float:right">Link</a>
+
+    </div>
+    <div class="row">
+        <div class="sol">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sun class popular qui offical deserund adipiscing eliti,sed to eismond ad minute costuming celluar
+                    Sun class popular qui offical deserund adipiscing eliti,sed to eismond 
+                    Sun class popular qui offical deserund adipiscing eliti,sed to eismond 
+                </p>
+            </div>
+        <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text..</p>
+                <p>Sun class popular qui offical deserund adipiscing eliti,sed to eismond ad minute costuming celluar
+                    Sun class popular qui offical deserund adipiscing eliti,sed to eismond 
+                    Sun class popular qui offical deserund adipiscing eliti,sed to eismond 
+                </p>
+            </div>
+        </div>
+        <div class="sag">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in qui official popular qu
+                    Sun class popular qui offical deserund adipiscing eliti,sed to eismond 
+                 </p>
+
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+
+    </div>
+</body>
+</html>

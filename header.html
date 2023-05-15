@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: #f1f1f1;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .nav{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .nav a{
+           padding: 15px 17px;
+           float:left ;
+           text-decoration: none;
+           color: white;
+
+        }
+        .nav a:hover{
+            background-color: grey;
+        }
+        .column{
+            float: left;
+            padding: 15px;
+
+        }
+
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width: 50%;
+        }
+        .footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px 12px;
+        }
+
+        @media screen and (max-width:600px){
+        .column.side{
+            width: 100%;
+        }
+        .column.middle{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Resize the browser window to see the respobnsive effect</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem Ipsum dolor sit</p>
+        </div>
+        <div class="column middle">
+            <h2>Main content</h2>
+            <p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+            </p>
+                Neden Kullanırız?
+                Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir. Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek' yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır. Şu anda birçok masaüstü yayıncılık paketi ve web sayfa düzenleyicisi, varsayılan mıgır metinler olarak Lorem Ipsum kullanmaktadır. Ayrıca arama motorlarında 'lorem ipsum' anahtar sözcükleri ile arama yapıldığında henüz tasarım aşamasında olan çok sayıda site listelenir. Yıllar içinde, bazen kazara, bazen bilinçli olarak (örneğin mizah katılarak), çeşitli sürümleri geliştirilmiştir.
+           
+            <p>Lorem Ipsum dolor</p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>Lorem Ipsum dolor</p>
+        </div>
+   
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>
